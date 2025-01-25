@@ -57,7 +57,7 @@ public class Slime : MonoBehaviour
             anim.SetTrigger("Attack");
             GameObject slimeObj = Instantiate(slimeBomb, spawnPoint.position, Quaternion.Euler(0, 180, 0));
             slimeObj.GetComponent<SlimeBall>().moveInput = transform.eulerAngles.y == 180 ? -1 : 1;
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(2f);
         }
 
         isAttacking = false;
