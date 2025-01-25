@@ -41,10 +41,20 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     Animator anim;
 
+    
+    AudioSource audioSource;
+    public AudioClip jumpSound;
+    public AudioClip shurikenSound;
+    public AudioClip coinCollectSound;
+    public AudioClip chestOpenSound;
+    public AudioClip trapSound;
+    public AudioClip healthSound;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
 
         canFire = true;
         if (!PlayerPrefs.HasKey("Life"))
@@ -102,6 +112,7 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpForce * 1.2f);
 
         anim.SetBool("JumpUp", true);
+        audioSource.PlayOneShot(jumpSound); // JUMP SESİ
         anim.SetBool("JumpDown", false);
     }
 
@@ -148,6 +159,7 @@ public class PlayerController : MonoBehaviour
             canFire = false;
 
             GameObject shrukienObj = Instantiate(shuriken, firePoint.transform.position, Quaternion.identity);
+            audioSource.PlayOneShot(shurikenSound); // shuriken sesi
             shrukienObj.GetComponent<Shuriken>().moveInput = transform.eulerAngles.y == 180 ? -1 : 1;
 
             Invoke(nameof(ResetCanFire), fireCooldown);
@@ -187,6 +199,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Coin"))
         {
             PlayerPrefs.SetInt("Coin", PlayerPrefs.GetInt("Coin") + 1);
+            audioSource.PlayOneShot(coinCollectSound); // para toplama sesi
             Destroy(collision.gameObject);
         }
 
@@ -194,6 +207,7 @@ public class PlayerController : MonoBehaviour
         {
             Animator chestAnim = collision.gameObject.GetComponent<Animator>();
             chestAnim.SetTrigger("Open");
+            audioSource.PlayOneShot(chestOpenSound); // para sandığı sesi 
 
             StartCoroutine(IncrementCoins(20));
             collision.GetComponent<BoxCollider2D>().enabled = false;
@@ -203,6 +217,7 @@ public class PlayerController : MonoBehaviour
         {
             Animator chestAnim = collision.gameObject.GetComponent<Animator>();
             chestAnim.SetTrigger("Open");
+            audioSource.PlayOneShot(chestOpenSound); // double jump sandığı alma sesi 
 
             ActivateJumpBonus();
             collision.GetComponent<BoxCollider2D>().enabled = false;
@@ -210,9 +225,11 @@ public class PlayerController : MonoBehaviour
 
         if (collision.gameObject.CompareTag("HealthPot"))
         {
+            audioSource.PlayOneShot(healthSound); // can alma sesi
             if (PlayerPrefs.GetInt("Life") < 3) 
             {
                 PlayerPrefs.SetInt("Life", PlayerPrefs.GetInt("Life") + 1);
+                
             }
             Destroy(collision.gameObject);
         }
@@ -229,6 +246,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Trap"))
         {
             PlayerPrefs.SetInt("Life", PlayerPrefs.GetInt("Life") - 1);
+            audioSource.PlayOneShot(trapSound); // trap'e basınca can azalma sesi 
             StartCoroutine(MoveBackSmoothly());
         }
     }

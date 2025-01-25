@@ -19,12 +19,23 @@ public class Slime : MonoBehaviour
 
     Animator anim;
 
+
+    AudioSource audioSource;
+    public AudioClip slimeSoundClip;
+
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         player = GameObject.FindWithTag("Player");
         anim = GetComponent<Animator>();
 
         health = 100;
+        if (audioSource == null){
+            Debug.LogError("Ses Dosyası Bulunamadı");
+        }
+        else{
+            audioSource.clip = slimeSoundClip;
+        }
     }
 
     private void Update()
@@ -56,6 +67,7 @@ public class Slime : MonoBehaviour
         {
             anim.SetTrigger("Attack");
             GameObject slimeObj = Instantiate(slimeBomb, spawnPoint.position, Quaternion.Euler(0, 180, 0));
+            audioSource.Play(); // slime atıs sesi
             slimeObj.GetComponent<SlimeBall>().moveInput = transform.eulerAngles.y == 180 ? -1 : 1;
             yield return new WaitForSeconds(2f);
         }

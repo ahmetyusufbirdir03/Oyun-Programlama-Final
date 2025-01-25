@@ -24,12 +24,20 @@ public class Shark : MonoBehaviour
     private bool movingToTarget = true;
     private bool isDead = false;
 
+    AudioSource audioSource;
+    public AudioClip sharkAttackSound;
+    public AudioClip sharkDamage;
+
+
     private void Start()
     {
         // Referanslari al
         player = GameObject.FindWithTag("Player");
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
+
+        audioSource.clip = sharkAttackSound;
 
         // Pozisyonlari ve sa�l�k degerlerini baslat
         originalPosition = transform.position;
@@ -48,6 +56,7 @@ public class Shark : MonoBehaviour
         {
             // Oyuncuya saldir
             anim.SetBool("Attack", true);
+            audioSource.Play();
         }
         else if (distanceToPlayer < 5f)
         {
@@ -150,5 +159,6 @@ public class Shark : MonoBehaviour
     public void HitPlayer()
     {
         PlayerPrefs.SetInt("Life", PlayerPrefs.GetInt("Life") - 1);
+        audioSource.PlayOneShot(sharkDamage); 
     }
 }

@@ -9,6 +9,13 @@ public class Mace : MonoBehaviour
     public float knockbackForce = 10f;
     private float timeCounter = 0f;
 
+    AudioSource audioSource;
+    public AudioClip maceDamageSound;
+
+    private void Start(){
+        audioSource = GetComponent<AudioSource>();
+    }
+
     void Update()
     {
         timeCounter += Time.deltaTime * rotationSpeed;
@@ -21,6 +28,7 @@ public class Mace : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             PlayerPrefs.SetInt("Life", PlayerPrefs.GetInt("Life") - 1);
+            audioSource.PlayOneShot(maceDamageSound);
 
             Rigidbody2D playerRb = collision.gameObject.GetComponent<Rigidbody2D>();
             if (playerRb != null)
