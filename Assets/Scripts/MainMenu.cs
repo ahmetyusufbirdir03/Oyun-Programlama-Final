@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour
 
     public void Button_LoadLevel()
     {
+        PlayerPrefs.SetInt("Life", 3);
         SceneManager.LoadScene(1);
     }
 }

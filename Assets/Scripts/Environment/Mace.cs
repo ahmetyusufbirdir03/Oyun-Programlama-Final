@@ -20,7 +20,7 @@ public class Mace : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.gameObject.GetComponent<PlayerController>().life -= 1;
+            PlayerPrefs.SetInt("Life", PlayerPrefs.GetInt("Life") - 1);
 
             Rigidbody2D playerRb = collision.gameObject.GetComponent<Rigidbody2D>();
             if (playerRb != null)

@@ -149,6 +149,6 @@ public class Shark : MonoBehaviour
 
     public void HitPlayer()
     {
-        player.GetComponent<PlayerController>().life -=1;
+        PlayerPrefs.SetInt("Life", PlayerPrefs.GetInt("Life") - 1);
     }
 }

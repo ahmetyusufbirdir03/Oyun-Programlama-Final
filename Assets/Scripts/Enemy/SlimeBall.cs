@@ -17,7 +17,7 @@ public class SlimeBall : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.GetComponent<PlayerController>().life--;
+            PlayerPrefs.SetInt("Life", PlayerPrefs.GetInt("Life") - 1);
             Destroy(this.gameObject);
         }
     }

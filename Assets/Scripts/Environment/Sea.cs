@@ -11,9 +11,9 @@ public class Sea : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other){
         PlayerController player = other.GetComponent<PlayerController>();
         if(other.tag == "Player")
-        {   
-            player.life -= 1;
-            switch(this.water_id){
+        {
+            PlayerPrefs.SetInt("Life", PlayerPrefs.GetInt("Life") - 1);
+            switch (this.water_id){
                 case 0:
                     player.transform.position = new Vector3(-13,1,0);
                     break;

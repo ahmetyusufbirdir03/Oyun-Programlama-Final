@@ -30,10 +30,18 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            pauseMenu.SetActive(true);
-            Time.timeScale = 0;
+            if (!pauseMenu.activeInHierarchy)
+            {
+                pauseMenu.SetActive(true);
+                Time.timeScale = 0;
+            }
+            else
+            {
+                pauseMenu.SetActive(false);
+                Time.timeScale = 1;
+            }
         }
 
         for (int i = 0; i < barImg.Length; i++)

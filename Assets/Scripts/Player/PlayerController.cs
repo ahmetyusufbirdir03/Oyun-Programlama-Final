@@ -28,11 +28,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float fireCooldown;
 
     [Header("Health")]
-    [SerializeField] public int life;
     [SerializeField] public GameObject healthParent;
 
     [Header("Coin")]
-    [SerializeField] public int coinCount;
     [SerializeField] public TMP_Text coinText;
     [SerializeField] private float coinIncreaseSpeed = 0.1f;
 
@@ -49,7 +47,11 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
 
         canFire = true;
-        life = 3;
+        if (!PlayerPrefs.HasKey("Life"))
+        {
+            PlayerPrefs.SetInt("Life", 3);
+        }
+
     }
 
     private void Update()
@@ -60,7 +62,7 @@ public class PlayerController : MonoBehaviour
         HealthManager();
         AdjustRotationToSlope();
 
-        coinText.text = coinCount.ToString("00");
+        coinText.text = PlayerPrefs.GetInt("Coin").ToString("00");
 
     }
 
@@ -167,11 +169,12 @@ public class PlayerController : MonoBehaviour
 
         for (int i = 0; i < healthIcons.Length; i++)
         {
-            healthIcons[i].gameObject.SetActive(i < life);
+            healthIcons[i].gameObject.SetActive(i < PlayerPrefs.GetInt("Life"));
         }
 
-        if (life <= 0)
+        if (PlayerPrefs.GetInt("Life") <= 0)
         {
+            PlayerPrefs.SetInt("Coin", 0);
             SceneManager.LoadScene(0);
         }
     }
@@ -183,7 +186,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Coin"))
         {
-            coinCount++;
+            PlayerPrefs.SetInt("Coin", PlayerPrefs.GetInt("Coin") + 1);
             Destroy(collision.gameObject);
         }
 
@@ -207,13 +210,16 @@ public class PlayerController : MonoBehaviour
 
         if (collision.gameObject.CompareTag("HealthPot"))
         {
-            if (life < 3) { life++; }
+            if (PlayerPrefs.GetInt("Life") < 3) 
+            {
+                PlayerPrefs.SetInt("Life", PlayerPrefs.GetInt("Life") + 1);
+            }
             Destroy(collision.gameObject);
         }
 
         if (collision.gameObject.CompareTag("End"))
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(2);
         }
 
     }
@@ -222,7 +228,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Trap"))
         {
-            life -= 1;
+            PlayerPrefs.SetInt("Life", PlayerPrefs.GetInt("Life") - 1);
             StartCoroutine(MoveBackSmoothly());
         }
     }
@@ -271,7 +277,7 @@ public class PlayerController : MonoBehaviour
         int coinsAdded = 0;
         while (coinsAdded < amount)
         {
-            coinCount++;
+            PlayerPrefs.SetInt("Coin", PlayerPrefs.GetInt("Coin") + 1);
             coinsAdded++;
             yield return new WaitForSeconds(coinIncreaseSpeed);
         }
