@@ -9,7 +9,7 @@ Red Ninja, Mario tarzı klasik bir platform oyunundan ilham alınarak geliştiri
 **Oyun üç ana sahneden oluşur:**
 - Ana Menü: Oyuncuların oyunu başaltması için oluşturulmuştur `Play` butonu ile oyun başlar ve `Audio` sliderı ile de sesi ayarlayabilirsiniz.
 - Birinci Harita: Temel seviyelerin bulunduğu başlangıç bölümü.
-- İkinci Harita: Daha zorlayıcı engeller ve güçlü düşmanlarla dolu bir bölüm.
+- İkinci Harita: Daha zorlayıcı engeller sahip bir bölüm, birinci harita bittikten sonra sahne geçişi ile geçilir.
   
 **Duraklatma Menüsü:**
   - Oynanış sırasında `ESC` tuşu ile erişilebilir.
@@ -18,32 +18,18 @@ Red Ninja, Mario tarzı klasik bir platform oyunundan ilham alınarak geliştiri
     - Yeniden Başlat
     - Ana Menüye Dön
     - Ses Ayarlarını Yap
-- **Düşmanlar:**
-  - Köpekbalığı
-  - Slime
-- **Engeller:**
-  - Gülleler
-  - Tuzaklar
-- **Etkileşimli Öğeler:**
-  - **Coinler:** Skoru artırmak için toplanır.
-  - **Sandıklar:**
-    - Bir tanesi coin çarpanını artırır.
-    - Diğeri çift zıplama yeteneği kazandırır.
+    - > ![Duraklama Menüsü](www.ornek1.com)
 
-##  Varlıklar
-Projede kullanılan temel varlıklar şunlardır:
-
-- **Karakter Spriteları:** Ninja ve düşman tasarımları.
-- **Çevre Spriteları:** Platform karoları, tuzaklar ve arka plan öğeleri.
-- **Ses:** Arka plan müziği ve zıplama, coin toplama, sandık etkileşimi gibi aksiyonlara ait ses efektleri.
-
-> ![Örnek Görsel 1](www.ornek1.com)
-> ![Örnek Görsel 2](www.ornek2.com)
-> ![Örnek Görsel 3](www.ornek3.com)
-> ![Örnek Görsel 4](www.ornek4.com)
-> ![Örnek Görsel 5](www.ornek5.com)
-> ![Örnek Görsel 6](www.ornek6.com)
-> ![Örnek Görsel 7](www.ornek7.com)
+**Oyun İçi Mekanikler**
+Red Ninja, oyunculara akıcı bir oynanış sunan zengin mekanikler içerir. Ana karakter, düşmanları etkisiz hale getirmek için shuriken fırlatabilir, engelleri aşmak ve yüksek yerlere ulaşmak için zıplayabilir ve `Shift` tuşu ile hızlı koşarak düşmanlardan kaçabilir veya avantaj sağlayabilir. Oyun boyunca köpekbalıkları ve slime gibi düşmanlarla mücadele edilirken, gülleler ve tuzaklar gibi engeller dikkatlice aşılmalıdır. Oyuncular haritadaki coinleri toplayarak skorlarını artırabilir, coin sayısını artıran veya çift zıplama yeteneği kazandıran sandıkları bularak avantaj elde edebilir. Bu mekanikler, hem stratejik kararlar almayı hem de hızlı refleksler göstermeyi gerektirerek eğlenceli ve zorlu bir deneyim sunar.
+> ![Player](www.ornek1.com)
+> ![Köpek Balığı](www.ornek2.com)
+> ![Slime](www.ornek3.com)
+> ![Gülle](www.ornek4.com)
+> ![Trap](www.ornek5.com)
+> ![Coin](www.ornek6.com)
+> ![Coin Sandığı](www.ornek7.com)
+> ![Double Junp Sandığı](www.ornek7.com)
 
 ##  Oyunu Oyna
 [Red Ninja oynamak için tıklayın](www.orneklink.com)
@@ -62,14 +48,14 @@ Projede kullanılan temel varlıklar şunlardır:
 - **Dil:** C#
 - **Versiyon Kontrol:** Git & GitHub
 
-## 👥 Ekip Katkıları
+## Ekip Katkıları
 | Ekip Üyesi           | Görev                              | Puan   |
 |----------------------|------------------------------------|--------|
 | Lütfü Bedel          |                                    | 40x    |
 | Ahmet Yusuf Birdir   |                                    | 40x    |
 | Yusuf Güney          |                                    | 40x    |
 
-## 📷 Ekran Görüntüleri
+## Oyun İçi Görseller
 > ![Örnek Görsel 1](www.ornek1.com)
 > ![Örnek Görsel 2](www.ornek2.com)
 > ![Örnek Görsel 3](www.ornek3.com)
