@@ -24,7 +24,6 @@ public class UIManager : MonoBehaviour
 
     Timer timer;
 
-
     private void Start()
     {
         if(!PlayerPrefs.HasKey("Volume"))
@@ -37,8 +36,6 @@ public class UIManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
-
-
 
     private void Update()
     {
@@ -164,8 +161,8 @@ public class UIManager : MonoBehaviour
         endGameMenu.SetActive(true);
         timer.StopTimer();
 
-        int minutes = Mathf.FloorToInt(timer.GetTimerValue() / 60f); // Dakika hesabý
-        int seconds = Mathf.FloorToInt(timer.GetTimerValue() % 60f); // Saniye hesabý
+        int minutes = Mathf.FloorToInt(timer.GetTimerValue() / 60f); // Dakika hesabï¿½
+        int seconds = Mathf.FloorToInt(timer.GetTimerValue() % 60f); // Saniye hesabï¿½
 
         string timePast = $"{minutes:D2}:{seconds:D2}";
         timerText.text = timePast;
@@ -175,28 +172,28 @@ public class UIManager : MonoBehaviour
 
     private IEnumerator HandleStars(float time)
     {
-        // Yýldýzlara süreye baðlý olarak karar ver
+        // Yï¿½ldï¿½zlara sï¿½reye baï¿½lï¿½ olarak karar ver
         if (timer.GetTimerValue() > 360)
         {
             star1.SetActive(true);
-            yield return new WaitForSeconds(0.5f); // Yarým saniye bekle
+            yield return new WaitForSeconds(0.5f); // Yarï¿½m saniye bekle
         }
         else if (timer.GetTimerValue() > 180)
         {
             star1.SetActive(true);
-            yield return new WaitForSeconds(0.5f); // Yarým saniye bekle
+            yield return new WaitForSeconds(0.5f); // Yarï¿½m saniye bekle
             star2.SetActive(true);
         }
         else
         {
             star1.SetActive(true);
-            yield return new WaitForSeconds(0.5f); // Yarým saniye bekle
+            yield return new WaitForSeconds(0.5f); // Yarï¿½m saniye bekle
             star2.SetActive(true);
-            yield return new WaitForSeconds(0.5f); // Yarým saniye bekle
+            yield return new WaitForSeconds(0.5f); // Yarï¿½m saniye bekle
             star3.SetActive(true);
         }
 
-        // Yýldýzlarýn açýlma animasyonu burada bitebilir
+        // Yï¿½ldï¿½zlarï¿½n aï¿½ï¿½lma animasyonu burada bitebilir
         yield return new WaitForSeconds(0.5f);
         menuButton.SetActive(true);
 
