@@ -48,12 +48,16 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     Animator anim;
     AudioSource audioSource;
+    Timer timer;
+    UIManager uiManager;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
+        timer = GameObject.FindWithTag("Timer").GetComponent<Timer>();
+        uiManager = GameObject.FindWithTag("UIManager").GetComponent<UIManager>();
 
         canFire = true;
         if (!PlayerPrefs.HasKey("Life"))
@@ -188,6 +192,7 @@ public class PlayerController : MonoBehaviour
         if (PlayerPrefs.GetInt("Life") <= 0)
         {
             PlayerPrefs.SetInt("Coin", 0);
+            timer.ResetTimer();
             SceneManager.LoadScene(0);
         }
     }
@@ -241,9 +246,15 @@ public class PlayerController : MonoBehaviour
             Destroy(collision.gameObject);
         }
 
-        if (collision.gameObject.CompareTag("End"))
+        if (collision.gameObject.CompareTag("EndLevel"))
         {
+            print(timer.GetTimerValue());
             SceneManager.LoadScene(2);
+        }
+
+        if (collision.gameObject.CompareTag("EndGame"))
+        {
+            uiManager.EndGame();
         }
 
     }

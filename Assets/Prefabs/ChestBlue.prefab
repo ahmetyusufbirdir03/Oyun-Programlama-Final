@@ -68,8 +68,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: +20
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d527ff1c3cdf11444a460c9cd30780a9, type: 2}
-  m_sharedMaterial: {fileID: -6656437268795818049, guid: d527ff1c3cdf11444a460c9cd30780a9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5f39355c318938b4eaa9d387f6a41cd4, type: 2}
+  m_sharedMaterial: {fileID: -6656437268795818049, guid: 5f39355c318938b4eaa9d387f6a41cd4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -423,8 +423,8 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -222020527
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &7905480506755160463
 MonoBehaviour:

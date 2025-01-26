@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -79,7 +79,7 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -92,7 +92,7 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
@@ -105,7 +105,7 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Windows Store Apps
     maxTextureSize: 2048
@@ -118,10 +118,170 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Elements512x256_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 187
+        width: 129
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ddcf6000db1b864cab0d5827f5a8a5a
+      internalID: 280933361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elements512x256_1
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 187
+        width: 129
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23510620be743734bac0c93dbd00b6e4
+      internalID: -768762155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elements512x256_2
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 187
+        width: 129
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 701c96cb64069a147bb7ec02d60367a0
+      internalID: -1925484517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elements512x256_3
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 15
+        width: 129
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7794cc4f071231c45b9f25ccb0ea9b29
+      internalID: 469409801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elements512x256_4
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 21
+        width: 128
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23225e0c78a1051419f7c05c69b8f647
+      internalID: -1286378290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elements512x256_5
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 100
+        width: 118
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95537245a7e931b428ea257bd164d6c2
+      internalID: -1158711264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elements512x256_6
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 20
+        width: 162
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e3776c9b535824184bb3b2788564f6
+      internalID: 609730794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +292,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Elements512x256_0: 280933361
+      Elements512x256_1: -768762155
+      Elements512x256_2: -1925484517
+      Elements512x256_3: 469409801
+      Elements512x256_4: -1286378290
+      Elements512x256_5: -1158711264
+      Elements512x256_6: 609730794
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

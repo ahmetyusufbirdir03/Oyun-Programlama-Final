@@ -27,7 +27,7 @@ public class Sea : MonoBehaviour
                     player.transform.position = new Vector3(40,3,0);
                     break;
                 case 4:
-                    player.transform.position = new Vector3(93,-14,0);
+                    player.transform.position = new Vector3(96,-14,0);
                     break;
                 case 5:
                     player.transform.position = new Vector3(113,13,0);

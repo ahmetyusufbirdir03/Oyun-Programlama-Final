@@ -55,7 +55,7 @@ public class Slime : MonoBehaviour
             }
 
 
-            if (distance < 8f && !isAttacking)
+            if (distance < 12f && !isAttacking)
             {
                 StartCoroutine(SpawnSlimeBombs());
             }
@@ -74,7 +74,7 @@ public class Slime : MonoBehaviour
     {
         isAttacking = true;
 
-        while (Vector3.Distance(transform.position, player.transform.position) < 8f)
+        while (Vector3.Distance(transform.position, player.transform.position) < 12f)
         {
             anim.SetTrigger("Attack");
             GameObject slimeObj = Instantiate(slimeBomb, spawnPoint.position, Quaternion.Euler(0, 180, 0));

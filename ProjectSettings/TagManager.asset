@@ -11,7 +11,11 @@ TagManager:
   - ChestBlue
   - ChestBrown
   - HealthPot
-  - End
+  - FxTemporaire
+  - Timer
+  - EndLevel
+  - EndGame
+  - UIManager
   layers:
   - Default
   - TransparentFX
