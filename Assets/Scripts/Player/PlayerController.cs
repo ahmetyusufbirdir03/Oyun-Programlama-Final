@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 
@@ -38,17 +37,17 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private bool canDoubleJump = false; 
     [SerializeField] public bool isJumpBonusActive = false;
 
+    [Header("Audio Clips")]
+    [SerializeField] private AudioClip jumpSound;
+    [SerializeField] private AudioClip shurikenSound;
+    [SerializeField] private AudioClip coinCollectSound;
+    [SerializeField] private AudioClip chestOpenSound;
+    [SerializeField] private AudioClip trapSound;
+    [SerializeField] private AudioClip healthSound;
+
     Rigidbody2D rb;
     Animator anim;
-
-    
     AudioSource audioSource;
-    public AudioClip jumpSound;
-    public AudioClip shurikenSound;
-    public AudioClip coinCollectSound;
-    public AudioClip chestOpenSound;
-    public AudioClip trapSound;
-    public AudioClip healthSound;
 
     private void Start()
     {
@@ -61,6 +60,8 @@ public class PlayerController : MonoBehaviour
         {
             PlayerPrefs.SetInt("Life", 3);
         }
+
+        
 
     }
 
@@ -206,6 +207,9 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("ChestBlue"))
         {
             Animator chestAnim = collision.gameObject.GetComponent<Animator>();
+            Animator textAnim = collision.gameObject.transform.GetChild(0).GetComponent<Animator>();
+
+            textAnim.SetTrigger("Open");
             chestAnim.SetTrigger("Open");
             audioSource.PlayOneShot(chestOpenSound); // para sandığı sesi 
 
@@ -216,7 +220,10 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("ChestBrown"))
         {
             Animator chestAnim = collision.gameObject.GetComponent<Animator>();
+            Animator textAnim = collision.gameObject.transform.GetChild(0).GetComponent<Animator>();
+
             chestAnim.SetTrigger("Open");
+            textAnim.SetTrigger("Open");
             audioSource.PlayOneShot(chestOpenSound); // double jump sandığı alma sesi 
 
             ActivateJumpBonus();

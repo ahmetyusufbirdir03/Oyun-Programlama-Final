@@ -30,7 +30,8 @@ public class Slime : MonoBehaviour
         anim = GetComponent<Animator>();
 
         health = 100;
-        if (audioSource == null){
+        if (audioSource == null)
+        {
             Debug.LogError("Ses Dosyası Bulunamadı");
         }
         else{
@@ -43,6 +44,16 @@ public class Slime : MonoBehaviour
         if (player != null)
         {
             float distance = Vector3.Distance(transform.position, player.transform.position);
+
+            if(player.transform.position.x > transform.position.x)
+            {
+                transform.rotation = new Quaternion(0, 0, 0, 1);
+            }
+            else
+            {
+                transform.rotation = new Quaternion(0, 180, 0, 1);
+            }
+
 
             if (distance < 8f && !isAttacking)
             {
@@ -68,7 +79,7 @@ public class Slime : MonoBehaviour
             anim.SetTrigger("Attack");
             GameObject slimeObj = Instantiate(slimeBomb, spawnPoint.position, Quaternion.Euler(0, 180, 0));
             audioSource.Play(); // slime atıs sesi
-            slimeObj.GetComponent<SlimeBall>().moveInput = transform.eulerAngles.y == 180 ? -1 : 1;
+            slimeObj.GetComponent<SlimeBall>().moveInput = transform.eulerAngles.y != 0 ? -1 : 1;
             yield return new WaitForSeconds(2f);
         }
 

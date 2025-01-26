@@ -63,9 +63,7 @@ public class Platform : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            print("A");
             collision.transform.SetParent(null);
-            print("B");
         }
     }
 
