@@ -1,56 +1,86 @@
-# Red Ninja
+# Red Ninja: Platform Macerası
 
-## Oynanış Bilgileri 
-**Red Ninja**, Mario tarzı 2D platform öğeleri içeren bir aksiyon-macera oyunudur. Oyuncunun amacı, düşmanları alt ederek ve engelleri aşarak platformda ilerlemektir. Eğlenceli ve hızlı tempolu oynanışıyla reflekslerinizi ve strateji yeteneklerinizi test etmeyi hedefler.  
+## 🎮 Proje Özeti
+Red Ninja, klasik Mario oyun tarzından ilham alan bir 2D platform oyunudur. Oyuncular platform boyunca ilerlerken çeşitli engeller ve düşmanlarla karşılaşır ve coin toplarlar. Oyun, çift zıplama ve coin çarpan artırıcı gibi heyecan verici mekanikler içerir.
 
-## Oynanış  
-**Red Ninja**, aşağıdaki temel mekaniklere dayanır:  
+## 📜 Oyun Özellikleri
 
-### Temel Mekanikler:  
-- **Hareket:** Oyuncu, yön tuşları veya `A`, `D` tuşları ile sağa, sola, yukarı ve aşağı hareket edebilir.  
-- **Shift ile Hızlı Koşma:** Oyuncu, `Shift` tuşuna basılı tutarak daha hızlı hareket edebilir. Bu mekanik, özellikle zamanla yarışılan bölümlerde veya düşmanlardan kaçarken önemlidir.  
-- **Zıplama:** Oyuncu, `Space` tuşuna basarak zıplayabilir. Platformlar arasında ilerlemek ve engelleri aşmak için kullanılır.  
-- **Shuriken Fırlatma:** Oyuncu, sol tıklama (`Left Click`) ile shuriken fırlatabilir. Shurikenler düşmanlara zarar vermek için kullanılır ve menzili yok platformun dışına kadar çıkabilir.
-- **Checkpointler:** Checkpoint noktaları, oyuncunun ilerlemesini kaydeder. Eğer oyuncu ölürse, en son checkpoint'ten devam eder.  
- 
-### Platform ve Çevre:  
-- **Düşmanlar:** Oyuncunun ilerlemesine engel olmak için hareket eden veya sabit düşmanlar bulunur. Düşmanlar belirli bir hareket modeliyle davranır ve oyuncuyla temas ettiğinde hasar verir.  
-- **Sandıklar:** Platform boyunca yerleştirilmiş olan sandıklar, oyuncuya ekstra shuriken, sağlık puanı veya geçici güçlendirmeler sağlar.  
-- **Engeller:** Oyuncunun dikkatlice geçmesi gereken çukurlar, hareketli platformlar ve tuzaklar bulunur.  
+- **Üç Oyun Sahnesi:**
+  - **Ana Menü:** Oyunu başlatma, ayarlara erişme ve sesi ayarlama seçenekleri sunar.
+  - **1. Harita ve 2. Harita:** Artan zorluk ve farklı tasarımlara sahip benzersiz bölümler.
+- **Duraklatma Menüsü:**
+  - Oynanış sırasında `ESC` tuşu ile erişilebilir.
+  - Seçenekler şunlardır:
+    - Devam Et
+    - Yeniden Başlat
+    - Ana Menüye Dön
+    - Ses Ayarlarını Yap
+- **Düşmanlar:**
+  - Köpekbalığı
+  - Slime
+- **Engeller:**
+  - Gülleler
+  - Tuzaklar
+- **Etkileşimli Öğeler:**
+  - **Coinler:** Skoru artırmak için toplanır.
+  - **Sandıklar:**
+    - Bir tanesi coin çarpanını artırır.
+    - Diğeri çift zıplama yeteneği kazandırır.
 
-### Kazanma ve Kaybetme:  
-- Oyuncunun hedefi, platformun sonuna ulaşarak tüm düşmanları etkisiz hale getirmek ve bölümü tamamlamaktır.  
-- Eğer oyuncu düşmanlar tarafından tüm sağlık puanını kaybeder veya engellerden birine düşerse, oyun en son checkpoint'ten tekrar başlar.  
+## 🎨 Varlıklar
+Projede kullanılan temel varlıklar şunlardır:
 
-## Oyuna Erişim  
-[[Oyun Bağlantısı](https://lutfubedel.itch.io/red-ninja)](#)  
+- **Karakter Spriteları:** Ninja ve düşman tasarımları.
+- **Çevre Spriteları:** Platform karoları, tuzaklar ve arka plan öğeleri.
+- **Ses:** Arka plan müziği ve zıplama, coin toplama, sandık etkileşimi gibi aksiyonlara ait ses efektleri.
 
-## Grup Üyeleri ve Katkıları  
+> ![Örnek Görsel 1](www.ornek1.com)
+> ![Örnek Görsel 2](www.ornek2.com)
+> ![Örnek Görsel 3](www.ornek3.com)
+> ![Örnek Görsel 4](www.ornek4.com)
+> ![Örnek Görsel 5](www.ornek5.com)
+> ![Örnek Görsel 6](www.ornek6.com)
+> ![Örnek Görsel 7](www.ornek7.com)
 
-### 1. **Lütfü Bedel : 21360859030**  
-- Aksiyonlar:  
-  - **Aksiyom1:Player Movement (A,D) -- PlayerConroller.cs/67 
-  - **Aksiyom2:Player Jump -- PlayerConroller.cs/107
-  - **Aksiyom3:Oyuncu canı azalma/artma -- PlayerConroller.cs/160
-  - **Aksiyom4:Player Fire -- PlayerConroller.cs/142
-  - **Aksiyom5: Player double jump -- PlayerConroller.cs/ 95,131
-  - **Aksiyom6: Player zemine göre yönünü ayarlama -- PlayerConroller.cs/243
+## 🌐 Oyunu Oyna
+[Red Ninja oynamak için tıklayın](www.orneklink.com)
 
-### 2. **Ahmet Yusuf Birdir : 21360859026**  
-- Aksiyonlar:
-  - **Aksiyom1:Oyuncu shift ile hızlanma -- PlayerController.cs/69 
-  - **Aksiyom2:Shark Oyuncuyu takip edip saldırma  -- Shark.cs/89
-  - **Aksiyom3:Shark iki nokta arası hareket etme -- Shark.cs/76
-  - **Aksiyom4:Slime Fire -- Slime.cs/51
-  - **Aksiyom5:Spike / Saw Oyuncuya hasar verme - kuvvet uygulayıp itme -- PlayerController.cs/216,225
-  
+## 🚀 Projeyi Çalıştırma
+1. Depoyu klonlayın:
+   ```bash
+   git clone https://github.com/username/red-ninja-platformer.git
+   ```
+2. Projeyi Unity'de açın.
+3. WebGL'in build hedefi olarak yüklendiğinden emin olun.
+4. Build alıp çalıştırarak oyunu oynayın.
 
-### 3. **Yusuf Güney : 22360859041**  
-- Aksiyonlar:  
-  - **Aksiyom1:Moving Platform -- Platform.cs(hepsi)
-  - **Aksiyom2:Sallana Gürz -- Mace.cs(hepsi)
-  - **Aksiyom3:Checkpoint noktalarına ışınlanma -- Sea.cs(hepsi)
-  - **Aksiyom4:Coin toplama/ coinleri ekrana yazdırma -- PlayerController.cs/184,264
-  - **Aksiyom5:Helth potion toplama/ oyuncuya can ekleme -- PlayerConroller.cs/208
-## Lisans  
-Bu proje, MIT Lisansı ile lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasını inceleyebilirsiniz.
+## 🛠 Geliştirme Araçları
+- **Motor:** Unity
+- **Dil:** C#
+- **Versiyon Kontrol:** Git & GitHub
+
+## 👥 Ekip Katkıları
+| Ekip Üyesi           | Görev                              | Puan   |
+|----------------------|------------------------------------|--------|
+| Lütfü Bedel          | Ana Menü, Duraklatma Menüsü       | 20x    |
+| Ahmet Yusuf Birdir   | Animasyon Kontrolcüsü             | 20x    |
+| Yusuf Güney          | Düşman ve Engel Mekanikleri       | 20x    |
+
+## 📷 Ekran Görüntüleri
+> ![Örnek Görsel 1](www.ornek1.com)
+> ![Örnek Görsel 2](www.ornek2.com)
+> ![Örnek Görsel 3](www.ornek3.com)
+> ![Örnek Görsel 4](www.ornek4.com)
+> ![Örnek Görsel 5](www.ornek5.com)
+> ![Örnek Görsel 6](www.ornek6.com)
+> ![Örnek Görsel 7](www.ornek7.com)
+
+## 📖 Ek Notlar
+- Tarayıcınızın WebGL desteklediğinden emin olun.
+- Bu proje, Bursa Teknik Üniversitesi tarafından sağlanan final proje yönergelerine uygundur.
+
+---
+**İletişim:** Geri bildirim veya sorular için bu depodan ya da ekibin e-posta adresinden ulaşabilirsiniz.
+
+---
+**Not:** Bu proje eğitim amaçlı geliştirilmiştir ve ticari kullanım için tasarlanmamıştır.
