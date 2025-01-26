@@ -10,7 +10,7 @@ Red Ninja, Mario tarzı klasik bir platform oyunundan ilham alınarak geliştiri
 - Ana Menü: Oyuncuların oyunu başaltması için oluşturulmuştur `Play` butonu ile oyun başlar ve `Audio` sliderı ile de sesi ayarlayabilirsiniz.
 - Birinci Harita: Temel seviyelerin bulunduğu başlangıç bölümü.
 - İkinci Harita: Daha zorlayıcı engeller ve güçlü düşmanlarla dolu bir bölüm.
-  **Duraklatma Menüsü:**
+   **Duraklatma Menüsü:**
   - Oynanış sırasında `ESC` tuşu ile erişilebilir.
   - Seçenekler şunlardır:
     - Devam Et
