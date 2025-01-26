@@ -191,6 +191,9 @@ public class PlayerController : MonoBehaviour
 
         if (PlayerPrefs.GetInt("Life") <= 0)
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+
             PlayerPrefs.SetInt("Coin", 0);
             timer.ResetTimer();
             SceneManager.LoadScene(0);

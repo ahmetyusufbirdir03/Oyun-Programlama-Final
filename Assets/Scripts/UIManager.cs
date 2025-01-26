@@ -133,18 +133,27 @@ public class UIManager : MonoBehaviour
 
     public void Button_BackMenu()
     {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
         pauseMenu.SetActive(true);
         audioMenu.SetActive(false);
     }
 
     public void Buttonn_Restart()
     {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Time.timeScale = 1;
     }
 
     public void Button_MainMenu()
     {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
         SceneManager.LoadScene(0);
         Time.timeScale = 1;
     }
