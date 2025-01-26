@@ -62,9 +62,9 @@ Projede kullanılan temel varlıklar şunlardır:
 ## 👥 Ekip Katkıları
 | Ekip Üyesi           | Görev                              | Puan   |
 |----------------------|------------------------------------|--------|
-| Lütfü Bedel          | Ana Menü, Duraklatma Menüsü       | 20x    |
-| Ahmet Yusuf Birdir   | Animasyon Kontrolcüsü             | 20x    |
-| Yusuf Güney          | Düşman ve Engel Mekanikleri       | 20x    |
+| Lütfü Bedel          |                                    | 40x    |
+| Ahmet Yusuf Birdir   |                                    | 40x    |
+| Yusuf Güney          |                                    | 40x    |
 
 ## 📷 Ekran Görüntüleri
 > ![Örnek Görsel 1](www.ornek1.com)
