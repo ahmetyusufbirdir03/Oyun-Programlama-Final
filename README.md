@@ -1,9 +1,9 @@
 # Red Ninja: Platform Macerası
 
-## 🎮 Proje Özeti
+##  Proje Özeti
 Red Ninja, klasik Mario oyun tarzından ilham alan bir 2D platform oyunudur. Oyuncular platform boyunca ilerlerken çeşitli engeller ve düşmanlarla karşılaşır ve coin toplarlar. Oyun, çift zıplama ve coin çarpan artırıcı gibi heyecan verici mekanikler içerir.
 
-## 📜 Oyun Özellikleri
+##  Oyun Özellikleri
 
 - **Üç Oyun Sahnesi:**
   - **Ana Menü:** Oyunu başlatma, ayarlara erişme ve sesi ayarlama seçenekleri sunar.
@@ -27,7 +27,7 @@ Red Ninja, klasik Mario oyun tarzından ilham alan bir 2D platform oyunudur. Oyu
     - Bir tanesi coin çarpanını artırır.
     - Diğeri çift zıplama yeteneği kazandırır.
 
-## 🎨 Varlıklar
+##  Varlıklar
 Projede kullanılan temel varlıklar şunlardır:
 
 - **Karakter Spriteları:** Ninja ve düşman tasarımları.
@@ -42,10 +42,10 @@ Projede kullanılan temel varlıklar şunlardır:
 > ![Örnek Görsel 6](www.ornek6.com)
 > ![Örnek Görsel 7](www.ornek7.com)
 
-## 🌐 Oyunu Oyna
+##  Oyunu Oyna
 [Red Ninja oynamak için tıklayın](www.orneklink.com)
 
-## 🚀 Projeyi Çalıştırma
+##  Projeyi Çalıştırma
 1. Depoyu klonlayın:
    ```bash
    git clone https://github.com/username/red-ninja-platformer.git
@@ -54,7 +54,7 @@ Projede kullanılan temel varlıklar şunlardır:
 3. WebGL'in build hedefi olarak yüklendiğinden emin olun.
 4. Build alıp çalıştırarak oyunu oynayın.
 
-## 🛠 Geliştirme Araçları
+## Geliştirme Araçları
 - **Motor:** Unity
 - **Dil:** C#
 - **Versiyon Kontrol:** Git & GitHub
@@ -75,12 +75,3 @@ Projede kullanılan temel varlıklar şunlardır:
 > ![Örnek Görsel 6](www.ornek6.com)
 > ![Örnek Görsel 7](www.ornek7.com)
 
-## 📖 Ek Notlar
-- Tarayıcınızın WebGL desteklediğinden emin olun.
-- Bu proje, Bursa Teknik Üniversitesi tarafından sağlanan final proje yönergelerine uygundur.
-
----
-**İletişim:** Geri bildirim veya sorular için bu depodan ya da ekibin e-posta adresinden ulaşabilirsiniz.
-
----
-**Not:** Bu proje eğitim amaçlı geliştirilmiştir ve ticari kullanım için tasarlanmamıştır.
