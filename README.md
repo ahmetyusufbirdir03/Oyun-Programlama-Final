@@ -1,13 +1,15 @@
 # Red Ninja: Platform Macerası
 
 ##  Proje Özeti
-Red Ninja, klasik Mario oyun tarzından ilham alan bir 2D platform oyunudur. Oyuncular platform boyunca ilerlerken çeşitli engeller ve düşmanlarla karşılaşır ve coin toplarlar. Oyun, çift zıplama ve coin çarpan artırıcı gibi heyecan verici mekanikler içerir.
+---
+Red Ninja, Mario tarzı klasik bir platform oyunundan ilham alınarak geliştirilmiş bir 2D macera oyunudur. Oyuncular, platform boyunca zıplayarak ve koşarak engelleri aşmaya, düşmanları alt etmeye ve coin toplayarak skorlarını artırmaya çalışırlar. Oyun, zorluk seviyeleri ve çeşitli oyun mekanikleri ile oyunculara keyifli bir deneyim sunar.
 
 ##  Oyun Özellikleri
-
-- **Üç Oyun Sahnesi:**
-  - **Ana Menü:** Oyunu başlatma, ayarlara erişme ve sesi ayarlama seçenekleri sunar.
-  - **1. Harita ve 2. Harita:** Artan zorluk ve farklı tasarımlara sahip benzersiz bölümler.
+---
+**Oyun üç ana sahneden oluşur:**
+Ana Menü: Oyuncular, oyunu başlatabilir, ayarlara erişebilir ve sesi yönetebilir.
+Birinci Harita: Temel seviyelerin bulunduğu başlangıç bölümü.
+İkinci Harita: Daha zorlayıcı engeller ve güçlü düşmanlarla dolu bir bölüm.
 - **Duraklatma Menüsü:**
   - Oynanış sırasında `ESC` tuşu ile erişilebilir.
   - Seçenekler şunlardır:
