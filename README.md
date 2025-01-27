@@ -61,6 +61,6 @@ Red Ninja, oyunculara akıcı bir oynanış sunan zengin mekanikler içerir. Ana
 - [Platform Oyun Varlıkları](https://assetstore.unity.com/packages/2d/environments/free-platform-game-assets-85838)
 - [GUI Arayüz Paketi](https://assetstore.unity.com/packages/2d/gui/cartoon-gui-pack-48850)
 - [Can İksiri](https://assetstore.unity.com/packages/2d/gui/icons/magic-potion-1-69874)
-- [2D Köpek Balığı](https://assetstore.unity.com/packages/2d/characters/2d-monster-cute-chibi-demo-pack-unique-skill-animated-prefab-wit-296969)
+- [Düşmanlar](https://assetstore.unity.com/packages/2d/characters/2d-monster-cute-chibi-demo-pack-unique-skill-animated-prefab-wit-296969)
 
 
