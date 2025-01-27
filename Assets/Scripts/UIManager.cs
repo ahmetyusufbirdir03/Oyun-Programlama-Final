@@ -194,7 +194,7 @@ public class UIManager : MonoBehaviour
     private IEnumerator HandleStars(float time)
     {
         // Y�ld�zlara s�reye ba�l� olarak karar ver
-        if (timer.GetTimerValue() > 360)
+        if (timer.GetTimerValue() > 300)
         {
             star1.SetActive(true);
             yield return new WaitForSeconds(0.5f); // Yar�m saniye bekle
