@@ -47,16 +47,20 @@ Red Ninja, oyunculara akıcı bir oynanış sunan zengin mekanikler içerir. Ana
 
 ## Oyun İçi Görseller
 > ![Örnek Görsel 1](/images/1.jpg)
-> ![Örnek Görsel 2](www.ornek2.com)
-> ![Örnek Görsel 3](www.ornek3.com)
-> ![Örnek Görsel 4](www.ornek4.com)
-> ![Örnek Görsel 5](www.ornek5.com)
-> ![Örnek Görsel 6](www.ornek6.com)
-> ![Örnek Görsel 7](www.ornek7.com)
+> ![Örnek Görsel 2](/images/2.jpg)
+> ![Örnek Görsel 3](/images/3.jpg)
+> ![Örnek Görsel 4](/images/4.jpg)
+> ![Örnek Görsel 5](/images/5.jpg)
+> ![Örnek Görsel 6](/images/6.jpg)
+> ![Örnek Görsel 7](/images/7.jpg)
+> ![Örnek Görsel 8](/images/8.jpg)
+> ![Örnek Görsel 9](/images/9.jpg)
+> ![Örnek Görsel 10](/images/10.jpg)
 
 ## Kullanılan Assetler
-> ![https://assetstore.unity.com/packages/2d/environments/free-platform-game-assets-85838](https://assetstore.unity.com/packages/2d/environments/free-platform-game-assets-85838)
-> ![https://assetstore.unity.com/ackages/2d/gui/cartoon-gui-pack-48850](https://assetstore.unity.com/ackages/2d/gui/cartoon-gui-pack-48850)
-> ![https://assetstore.unity.com/packages/2d/gui/icons/magic-potion-1-69874](https://assetstore.unity.com/packages/2d/gui/icons/magic-potion-1-69874)
-> ![https://assetstore.unity.com/packages/2d/characters/2d-monster-cute-chibi-demo-pack-unique-skill-animated-prefab-wit-296969](https://assetstore.unity.com/packages/2d/characters/2d-monster-cute-chibi-demo-pack-unique-skill-animated-prefab-wit-296969) 
+- [Platform Oyun Varlıkları](https://assetstore.unity.com/packages/2d/environments/free-platform-game-assets-85838)
+- [GUI Arayüz Paketi](https://assetstore.unity.com/packages/2d/gui/cartoon-gui-pack-48850)
+- [Can İksiri](https://assetstore.unity.com/packages/2d/gui/icons/magic-potion-1-69874)
+- [2D Köpek Balığı](https://assetstore.unity.com/packages/2d/characters/2d-monster-cute-chibi-demo-pack-unique-skill-animated-prefab-wit-296969)
+
 
