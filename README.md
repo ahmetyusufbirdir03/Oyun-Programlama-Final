@@ -46,7 +46,7 @@ Red Ninja, oyunculara akıcı bir oynanış sunan zengin mekanikler içerir. Ana
 
 
 ## Oyun İçi Görseller
-> ![Örnek Görsel 1](www.ornek1.com)
+> ![Örnek Görsel 1](/images/1.jpg)
 > ![Örnek Görsel 2](www.ornek2.com)
 > ![Örnek Görsel 3](www.ornek3.com)
 > ![Örnek Görsel 4](www.ornek4.com)
