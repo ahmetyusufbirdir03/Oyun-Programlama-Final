@@ -18,18 +18,18 @@ Red Ninja, Mario tarzı klasik bir platform oyunundan ilham alınarak geliştiri
     - Yeniden Başlat
     - Ana Menüye Dön
     - Ses Ayarlarını Yap
-    > ![Duraklama Menüsü](www.ornek1.com)
+    > ![Duraklama Menüsü](/images/PauseMenu.png)
 
 **Oyun İçi Mekanikler**
 Red Ninja, oyunculara akıcı bir oynanış sunan zengin mekanikler içerir. Ana karakter, düşmanları etkisiz hale getirmek için shuriken fırlatabilir, engelleri aşmak ve yüksek yerlere ulaşmak için zıplayabilir ve `Shift` tuşu ile hızlı koşarak düşmanlardan kaçabilir veya avantaj sağlayabilir. Oyun boyunca köpekbalıkları ve slime gibi düşmanlarla mücadele edilirken, gülleler ve tuzaklar gibi engeller dikkatlice aşılmalıdır. Oyuncular haritadaki coinleri toplayarak skorlarını artırabilir, coin sayısını artıran veya çift zıplama yeteneği kazandıran sandıkları bularak avantaj elde edebilir. Bu mekanikler, hem stratejik kararlar almayı hem de hızlı refleksler göstermeyi gerektirerek eğlenceli ve zorlu bir deneyim sunar.
-> ![Player](www.ornek1.com)
-> ![Köpek Balığı](www.ornek2.com)
-> ![Slime](www.ornek3.com)
-> ![Gülle](www.ornek4.com)
-> ![Trap](www.ornek5.com)
-> ![Coin](www.ornek6.com)
-> ![Coin Sandığı](www.ornek7.com)
-> ![Double Junp Sandığı](www.ornek7.com)
+> ![Player](/images/Player.png)
+> ![Köpek Balığı](/images/Player.png)
+> ![Slime](/images/Slime.png)
+> ![Gülle](/images/Gulle.png)
+> ![Trap](/images/Trap.png)
+> ![Coin](/images/Coin.png)
+> ![Coin Sandığı](/images/CoinChest.png)
+> ![Double Junp Sandığı](/images/DoubleJumpChest.png)
 
 ##  Oyunu Oyna
 [Red Ninja oynamak için tıklayın](www.orneklink.com)
