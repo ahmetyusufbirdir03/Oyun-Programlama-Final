@@ -18,29 +18,16 @@ Red Ninja, Mario tarzı klasik bir platform oyunundan ilham alınarak geliştiri
     - Yeniden Başlat
     - Ana Menüye Dön
     - Ses Ayarlarını Yap
-    > ![Duraklama Menüsü](/images/PauseMenu.png)
 
 **Oyun İçi Mekanikler**
 Red Ninja, oyunculara akıcı bir oynanış sunan zengin mekanikler içerir. Ana karakter, düşmanları etkisiz hale getirmek için shuriken fırlatabilir, engelleri aşmak ve yüksek yerlere ulaşmak için zıplayabilir ve `Shift` tuşu ile hızlı koşarak düşmanlardan kaçabilir veya avantaj sağlayabilir. Oyun boyunca köpekbalıkları ve slime gibi düşmanlarla mücadele edilirken, gülleler ve tuzaklar gibi engeller dikkatlice aşılmalıdır. Oyuncular haritadaki coinleri toplayarak skorlarını artırabilir, coin sayısını artıran veya çift zıplama yeteneği kazandıran sandıkları bularak avantaj elde edebilir. Bu mekanikler, hem stratejik kararlar almayı hem de hızlı refleksler göstermeyi gerektirerek eğlenceli ve zorlu bir deneyim sunar.
-> ![Player](/images/Player.png)
-> ![Köpek Balığı](/images/Player.png)
-> ![Slime](/images/Slime.png)
-> ![Gülle](/images/Gulle.png)
-> ![Trap](/images/Trap.png)
-> ![Coin](/images/Coin.png)
-> ![Coin Sandığı](/images/CoinChest.png)
-> ![Double Junp Sandığı](/images/DoubleJumpChest.png)
-> ![Can Potu](/images/HealthPot.png)
-> ![Tester](/images/Testere.png)
-> ![Tuzak](/images/Tuzak.png)
-
 ##  Oyunu Oyna
 [Red Ninja oynamak için tıklayın](www.orneklink.com)
 
 ##  Projeyi Çalıştırma
 1. Depoyu klonlayın:
    ```bash
-   git clone https://github.com/username/red-ninja-platformer.git
+   git clone https://github.com/ahmetyusufbirdir03/red-ninja-platformer.git
    ```
 2. Projeyi Unity'de açın.
 3. WebGL'in build hedefi olarak yüklendiğinden emin olun.
@@ -52,11 +39,11 @@ Red Ninja, oyunculara akıcı bir oynanış sunan zengin mekanikler içerir. Ana
 - **Versiyon Kontrol:** Git & GitHub
 
 ## Ekip Katkıları
-| Ekip Üyesi           | Görev                              | Puan   |
-|----------------------|------------------------------------|--------|
-| Lütfü Bedel          |                                    | 40x    |
-| Ahmet Yusuf Birdir   |                                    | 40x    |
-| Yusuf Güney          |                                    | 40x    |
+|Lütfü Bedel           | Ahmet Yusuf Birdir                 | Yusuf Güney     |
+|----------------------|------------------------------------|-----------------|
+|            |                                              |                 |  
+|            |                                              |                 |
+|            |                                              |                 |
 
 ## Oyun İçi Görseller
 > ![Örnek Görsel 1](www.ornek1.com)
