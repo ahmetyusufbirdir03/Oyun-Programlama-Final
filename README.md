@@ -41,9 +41,9 @@ Red Ninja, oyunculara akıcı bir oynanış sunan zengin mekanikler içerir. Ana
 ## Ekip Katkıları
 |Lütfü Bedel 21360859030 | Ahmet Yusuf Birdir 21360859026     | Yusuf Güney 22360859041|
 |----------------------  |------------------------------------|------------------------|
-|  Ana Menü (20x)        |  Animsayonlar (20x)                |  Ses ve Müzik (20x)    |  
-|  Ses ve Müzik (10x)    |  Ana menü (10x)                    |  Asenkronizasyon (10x) |
-|  Animasyonlar (10x)    |  Duraklama Menüsü (10x)            | Duraklama Menüsü (10x) |
+|  Ana Menü (30x)        |   Animsayonlar (30x)               |  Ses ve Müzik (20x)    |  
+|  Ses ve Müzik (10x)    |   Asenkronizasyon (10x)            |  Duraklama Menüsü (20x)|
+
 
 ## Oyun İçi Görseller
 > ![Örnek Görsel 1](www.ornek1.com)
