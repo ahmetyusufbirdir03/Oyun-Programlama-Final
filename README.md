@@ -30,6 +30,9 @@ Red Ninja, oyunculara akıcı bir oynanış sunan zengin mekanikler içerir. Ana
 > ![Coin](/images/Coin.png)
 > ![Coin Sandığı](/images/CoinChest.png)
 > ![Double Junp Sandığı](/images/DoubleJumpChest.png)
+> ![Can Potu](/images/HealthPot.png)
+> ![Tester](/images/Testere.png)
+> ![Tuzak](/images/Tuzak.png)
 
 ##  Oyunu Oyna
 [Red Ninja oynamak için tıklayın](www.orneklink.com)
