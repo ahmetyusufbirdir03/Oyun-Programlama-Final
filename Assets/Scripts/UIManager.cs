@@ -23,8 +23,6 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject star1,star2,star3;
     [SerializeField] private GameObject menuButton;
 
-    [Header("Audio Settings")]
-    [SerializeField] private AudioMixer audioMixer;
 
     Timer timer;
 
@@ -109,6 +107,7 @@ public class UIManager : MonoBehaviour
     public void Button_AudioOff()
     {
         PlayerPrefs.SetInt("Volume",0);
+        UpdateVolume();
         auidoOffButton.SetActive(false);
         auidoOnButton.SetActive(true);
     }
@@ -116,24 +115,18 @@ public class UIManager : MonoBehaviour
     public void Button_AudioOn()
     {
         PlayerPrefs.SetInt("Volume", 3);
+        UpdateVolume();
         auidoOffButton.SetActive(true);
         auidoOnButton.SetActive(false);
     }
 
     private void UpdateVolume()
-    {
-        // Volume değerini al ve dB'e çevir
-        int volumeLevel = PlayerPrefs.GetInt("Volume"); // 0-5 arası
-        float volumeDb = Mathf.Lerp(-80f, 0f, volumeLevel / 5f); // 0 = -80dB (sessiz), 5 = 0dB (tam ses)
-        // Audio Mixer parametresini ayarla
-        audioMixer.SetFloat("Volume", volumeDb);
-        audioMixer.SetFloat("PlayerSound", volumeDb); // Player sesi
-        audioMixer.SetFloat("SharkSound", volumeDb); // Shark sesi
-        audioMixer.SetFloat("SlimeSound", volumeDb); // Slime sesi
-        audioMixer.SetFloat("ButtonSound", volumeDb); // buton sesi
-        for (int i = 0; i < barImg.Length; i++)
+    {  
+        AudioSource[] audioSources = FindObjectsOfType<AudioSource>();
+
+        foreach (AudioSource item in audioSources)
         {
-        barImg[i].SetActive(i == volumeLevel);
+            item.volume = PlayerPrefs.GetInt("Volume") / 5f;
         }
     }
 

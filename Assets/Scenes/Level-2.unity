@@ -7958,7 +7958,6 @@ MonoBehaviour:
   star2: {fileID: 1232765354}
   star3: {fileID: 446044700}
   menuButton: {fileID: 1677465818}
-  audioMixer: {fileID: 24100000, guid: 9505bdbc4e1a69d42a35df1ed3eab06c, type: 2}
 --- !u!4 &1929013920
 Transform:
   m_ObjectHideFlags: 0
@@ -56245,6 +56244,10 @@ PrefabInstance:
     - target: {fileID: 3775394578113195385, guid: ff3beadc6c6702246a3bf012f1cae36f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387176552192370420, guid: ff3beadc6c6702246a3bf012f1cae36f, type: 3}
+      propertyPath: m_Constraints
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5387176552192370420, guid: ff3beadc6c6702246a3bf012f1cae36f, type: 3}
       propertyPath: m_GravityScale
