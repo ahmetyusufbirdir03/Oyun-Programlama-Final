@@ -39,11 +39,11 @@ Red Ninja, oyunculara akıcı bir oynanış sunan zengin mekanikler içerir. Ana
 - **Versiyon Kontrol:** Git & GitHub
 
 ## Ekip Katkıları
-| Ekip Üyesi           | Görev                              | Puan   |
-|----------------------|------------------------------------|--------|
-| Lütfü Bedel          |                                    | 40x    |
-| Ahmet Yusuf Birdir   |                                    | 40x    |
-| Yusuf Güney          |                                    | 40x    |
+|Lütfü Bedel           | Ahmet Yusuf Birdir                 | Yusuf Güney     |
+|----------------------|------------------------------------|-----------------|
+|            |                                              |                 |  
+|            |                                              |                 |
+|            |                                              |                 |
 
 ## Oyun İçi Görseller
 > ![Örnek Görsel 1](www.ornek1.com)
