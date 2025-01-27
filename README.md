@@ -27,7 +27,7 @@ Red Ninja, oyunculara akıcı bir oynanış sunan zengin mekanikler içerir. Ana
 ##  Projeyi Çalıştırma
 1. Depoyu klonlayın:
    ```bash
-   git clone https://github.com/ahmetyusufbirdir03/red-ninja-platformer.git
+   git clone https://github.com/ahmetyusufbirdir03/Red-Ninja-Final-.git
    ```
 2. Projeyi Unity'de açın.
 3. WebGL'in build hedefi olarak yüklendiğinden emin olun.
