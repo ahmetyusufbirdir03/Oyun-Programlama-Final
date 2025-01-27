@@ -7,7 +7,7 @@ Red Ninja, Mario tarzı klasik bir platform oyunundan ilham alınarak geliştiri
 ##  Oyun Özellikleri
 ---
 **Oyun üç ana sahneden oluşur:**
-- Ana Menü: Oyuncuların oyunu başaltması için oluşturulmuştur `Play` butonu ile oyun başlar ve `Audio` sliderı ile de sesi ayarlayabilirsiniz ``.
+- Ana Menü: Oyuncuların oyunu başaltması için oluşturulmuştur `Play` butonu ile oyun başlar ve `Audio` sliderı ile de sesi ayarlayabilirsiniz `Controls` menüsünden oyunun nasıl oynanacağını öğreniyoruz .
 - Birinci Harita: Temel seviyelerin bulunduğu başlangıç bölümü.
 - İkinci Harita: Daha zorlayıcı engeller sahip bir bölüm, birinci harita bittikten sonra sahne geçişi ile geçilir.
   
