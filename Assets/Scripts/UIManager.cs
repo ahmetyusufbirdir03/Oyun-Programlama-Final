@@ -176,6 +176,9 @@ public class UIManager : MonoBehaviour
 
     public void EndGame()
     {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
         endGameMenu.SetActive(true);
         timer.StopTimer();
 
