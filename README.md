@@ -20,7 +20,8 @@ Red Ninja, Mario tarzı klasik bir platform oyunundan ilham alınarak geliştiri
     - Ses Ayarlarını Yap
 
 **Oyun İçi Mekanikler:**
-    Red Ninja, oyunculara akıcı bir oynanış sunan zengin mekanikler içerir. Ana karakter, düşmanları etkisiz hale getirmek için shuriken fırlatabilir, engelleri aşmak ve yüksek yerlere ulaşmak için zıplayabilir ve `Shift` tuşu ile hızlı koşarak düşmanlardan kaçabilir veya avantaj sağlayabilir. Oyun boyunca köpekbalıkları ve slime gibi düşmanlarla mücadele edilirken, gülleler ve tuzaklar gibi engeller dikkatlice aşılmalıdır. Oyuncular haritadaki coinleri toplayarak skorlarını artırabilir, coin sayısını artıran veya çift zıplama yeteneği kazandıran sandıkları bularak avantaj elde edebilir. Bu mekanikler, hem stratejik kararlar almayı hem de hızlı refleksler göstermeyi gerektirerek eğlenceli ve zorlu bir deneyim sunar.
+---
+  Red Ninja, oyunculara akıcı bir oynanış sunan zengin mekanikler içerir. Ana karakter, düşmanları etkisiz hale getirmek için shuriken fırlatabilir, engelleri aşmak ve yüksek yerlere ulaşmak için zıplayabilir ve `Shift` tuşu ile hızlı koşarak düşmanlardan kaçabilir veya avantaj sağlayabilir. Oyun boyunca köpekbalıkları ve slime gibi düşmanlarla mücadele edilirken, gülleler ve tuzaklar gibi engeller dikkatlice aşılmalıdır. Oyuncular haritadaki coinleri toplayarak skorlarını artırabilir, coin sayısını artıran veya çift zıplama yeteneği kazandıran sandıkları bularak avantaj elde edebilir. Bu mekanikler, hem stratejik kararlar almayı hem de hızlı refleksler göstermeyi gerektirerek eğlenceli ve zorlu bir deneyim sunar.
 ##  Oyunu Oyna
 [Red Ninja oynamak için tıklayın](https://lutfubedel.itch.io/red-ninja)
 
